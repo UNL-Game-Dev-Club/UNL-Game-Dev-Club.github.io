@@ -13,7 +13,7 @@ body
 { font-family: "lucida sans", arial, sans-serif;
   padding: 0px;
   margin: 0px;
-  font-size: .78em;
+  font-size: 1em;
   background: var(--accent);
   color: #635B53;}
 
