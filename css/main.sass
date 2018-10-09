@@ -1,0 +1,366 @@
+$scarlet: #D00000
+$cream: #FEFDFA
+$light-gray: #635B53
+$dark-gray: #342f28
+$dark-gray-1: #313131
+$dark-gray-2: #3B3B3B
+$dull-yellow: #A4AA04
+$dull-tan: #CCC6B4
+$egg-white: #E5E5DB
+$solid-white: #FFF
+$brown: #47433F
+
+$base: $scarlet
+$accent: $cream
+
+$body-text-color: $dark-gray
+$border-color: #E5E5DB
+$thin-solid-border: 1px solid
+$thin-dotted-border: 1px dotted
+$block-quote-border: $thin-solid-border $border-color
+$logo-text-h1-color: #777
+$logo-text-h2-color: #BBB
+
+$menu-link-color: $solid-white
+$sidebar-link-color: #555
+$sidebar-selected-link-color: $dull-yellow
+$footer-color: $dark-gray
+
+$menu-selected-background-image: url(../images/tabs.png)
+$menu-selected-background-color: #635B53
+$menu-selected-background: $menu-selected-background-color $menu-selected-background-image no-repeat
+
+
+html
+    height: 100%
+
+form
+    padding: 0
+    margin: 0
+
+body
+    font-family: "lucida sans", arial, sans-serif
+    padding: 0
+    margin: 0
+    font-size: 1rem
+    background: $accent
+    color: $body-text-color
+
+p
+    margin: 0
+    padding-bottom: 1rem
+    line-height: 1.7rem
+
+h1, h2, h3, h4
+    padding-top: 0.5rem
+    padding-bottom: 0.5rem
+    margin-bottom: 1rem
+    font-weight: normal
+    color: $dark-gray
+    font-family: serif
+
+h1, h3
+    text-transform: uppercase
+    margin-top: 1rem // 10px
+    margin-bottom: 1.5rem // 20px
+    padding: 0.5rem 1.5rem // 5px 20px
+    border-bottom: $thin-solid-border $accent
+
+a
+    border-bottom: $thin-dotted-border
+    color: $light-gray
+    outline: none
+    
+    &:hover
+        border-bottom: $thin-solid-border
+        color: $base
+
+img
+    border: none
+    margin: 0
+    padding: 0
+
+.left
+    float: left
+    margin-right: 1rem // 10px
+
+.right
+    float: right
+    margin-left: 1rem // 10px
+
+.center
+    display: block
+    text-align: center
+    margin: 0 auto
+
+blockquote
+    margin: 1.5rem 0  //20px 0px
+    padding: 1rem 2rem //10
+    padding: 1rem 1.5rem 0 1.5rem // 10px 20px 0 20px
+    border: $block-quote-border
+
+ul
+    li
+        list-style-type: square
+        margin: none
+        margin-bottom: 0.5rem
+        padding: none
+
+ol
+    margin: 0.5rem 0 0 1.5rem // 8px 0 0 24px
+    padding: none
+
+    li
+        margin: none
+        margin-bottom: 1rem // 11px
+        padding: none
+
+#main, #logo, #menubar, #site_content, #footer
+    margin-left: auto
+    margin-right: auto
+
+#header
+    background: url(../images/back.png) repeat-x
+
+#logo
+    width: 55rem
+    height: 8rem
+    position: relative
+    background: transparent url(../images/logo.png) no-repeat right
+
+    & &_text
+        position: absolute
+        top: 0
+        left: 0
+    
+    h1
+        font: normal 300% 'century gothic', arial, sans-serif
+        border-bottom: none
+        text-transform: none
+        margin: none
+        margin-bottom: 0.5rem
+        font-size: 300%
+        padding: none
+        padding-top: 1.5rem
+        color: $logo-text-h1-color
+
+    h2
+        font: normal 300% 'century gothic', arial, sans-serif
+        border-bottom: none
+        text-transform: none
+        margin: none
+        margin-bottom: 0.5rem
+        font-size: 120%
+        padding: none
+        padding-top: 0.25rem
+        color: $logo-text-h2-color
+
+    a
+        border: none
+        
+    &_text
+        h1, a, h1 a:hover
+            padding: 1.5rem
+            color: $logo-text-h1-color
+            letter-spacing: 0.1rem
+            text-decoration: none
+        
+        h1
+            margin: 0
+            font-family: "century gothic", arial, sans-serif
+            
+            a
+                .logo_colour
+                    color: $base
+
+        a:hover
+            .logo_colour
+                color: $logo-text-h1-color
+
+        h2
+            font-size: 120%
+            padding: none
+            padding-top: 0.25rem
+            color: $logo-text-h2-color
+            margin: 0
+            font-family: "century gothic", arial, sans-serif
+
+#menubar
+    width: 55rem
+    height: 8rem
+    padding-top: 0.25rem
+    padding-left: 0.25rem
+
+ul
+    #menu
+        float: left
+        margin: 0
+
+        li
+            float: left
+            margin: none
+            margin-top: 0.25rem
+            padding: none
+            padding-left: 0.25rem
+
+            a
+                letter-spacing: 0.1rem
+                font-family: serif
+                font-size: 100%
+                display: block 
+                float: left
+                height: 20px
+                text-decoration: none
+                padding: 0.5rem 1.5rem 0.25rem 1rem
+                text-align: center
+                color: $menu-link-color
+                text-transform: uppercase
+                border: none
+
+                &:hover
+                    color: $base
+
+            &.selected
+                margin: 0.5rem 0 0 0
+                background: $menu-selected-background 0 0
+
+                a, a:hover
+                    background: $menu-selected-background 100% 0
+                    color: $menu-link-color
+
+#site_content
+    width: 55rem // Possibly remove
+    margin-top: 1rem
+    overflow: hidden
+
+.sidebar
+    float: right
+    width: 11.5rem
+    padding: 1.5rem 1.5rem 1rem 1rem
+
+    ul
+        width: 11.5rem
+        padding-top: 0.25rem
+        margin: 0.25rem 0 2rem 0
+
+    li
+        text-decoration: none
+        padding: none
+        padding-bottom: 0.25rem
+
+        a, a:hover
+            text-decoration: none
+            padding: 0.25rem 0 0.25rem 2rem
+            display: block
+            color: $sidebar-link-color
+            border: none
+
+        a.selected, a:hover, a.selected:hover
+            color: $sidebar-selected-link-color
+
+#content
+    text-align: left
+    width: 39rem
+    float: left
+    padding: 1rem 0.5rem 1rem 0
+
+#footer
+    width: 100%
+    font-family: sans-serif
+    font-size: 90%
+    height: 5rem
+    padding: 1.25rem 0 0.25px 0
+    margin-bottom: 1.25rem
+    text-align: center 
+    background: $dark-gray-1
+    color: $footer-color
+    border-top: 4px solid $base
+    text-transform: uppercase
+    letter-spacing: 0.1em
+
+    a
+        color: $accent
+        text-decoration: none
+
+        &:hover
+            color: $base
+            text-decoration: none
+
+.search
+    width: 8rem
+    border: $thin-solid-border $dull-tan
+    padding: 0.25rem
+    color: $light-gray
+
+.form
+    &_settings
+        margin: none
+        margin-top: 1rem
+
+        p
+            padding: none
+            padding-bottom: 0.25rem
+
+        span
+            float: left
+            width: 12.5rem
+            text-align: left
+
+        input
+            padding: 0.25rem
+            width: 19rem
+            font: 100% arial
+            border: $thin-solid-border $egg-white
+            background: $solid-white
+            color: $brown
+
+        textarea
+            padding: 0.25rem
+            width: 19rem
+            font: 100% arial
+            border: $thin-solid-border $egg-white
+            background: $solid-white
+            color: $brown
+
+        .submit
+            font: 100% arial
+            border: $thin-solid-border
+            width: 6.5rem
+            margin: none
+            margin-left: 13.25rem
+            height: 2.5rem
+            padding: 0.25rem 0
+            cursor: pointer
+            background: $dark-gray-2
+            color: $solid-white
+
+        select
+            font: 100% arial
+            width: 20rem
+
+        .checkbox
+            margin: 0.25rem 0
+            padding: 0
+            width: 1rem
+            border: 0
+            background: none
+
+.separator
+    width: 100%
+    height: 0
+    border-top: $thin-solid-border $accent
+    border-bottom: $thin-solid-border $solid-white
+    margin: none
+    margin-bottom: 1.5rem
+
+table
+    background-color: $dark-gray-2
+    color: $solid-white
+    padding: 0.5rem 0.25rem
+    text-align: left
+
+    tr
+        td
+            background-color: $solid-white
+            $color: $brown
+            border-top: $thin-solid-border $solid-white

@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "lucida sans", arial, sans-serif;
+}
+
+#header {
+  background-color: black;
+  padding: 1.5rem 10%;
+  font-family: "century gothic", arial, sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.1rem;
+}
+#header h1 {
+  color: #D00000;
+  font-size: 3rem;
+}
+#header h1 a {
+  color: #777;
+  text-decoration: none;
+}
+#header h1 a span {
+  color: #D00000;
+}
+#header h1 a:hover {
+  color: #D00000;
+}
+#header h2 {
+  color: #777;
+  font-size: 1.2rem;
+}
+
+#menubar {
+  background-color: #313131;
+  width: 100%;
+  padding: 0 10%;
+  border-bottom: 4px solid #D00000;
+}
+#menubar ul li {
+  display: inline-block;
+  margin: 0 3%;
+  margin-top: 0.5rem;
+  padding: 0.3rem 2%;
+}
+#menubar ul li:first-child {
+  margin-left: 0;
+}
+#menubar ul li:last-child {
+  margin-right: 0;
+}
+#menubar ul li a {
+  text-align: center;
+  color: #FEFDFA;
+  text-decoration: none;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+}
+#menubar ul li a:hover {
+  color: #D00000;
+}
+#menubar ul li.selected {
+  background-color: #D00000;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.body_text {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.body_text_content {
+  float: left;
+  border-right: 0.5px solid #ddd;
+  padding: 1.5rem 3.5rem;
+}
+.body_text_content h1 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1.5rem;
+  padding-bottom: 3rem;
+}
+.body_text_content h2 {
+  font-size: 1.7rem;
+  text-align: left;
+  padding-bottom: 1rem;
+}
+.body_text_content p {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+.body_text_content ul {
+  margin-left: 2rem;
+}
+.body_text_content ul li {
+  font-size: 1.2rem;
+}
+.body_text_content a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px dotted #777;
+}
+.body_text_content a:hover {
+  color: #D00000;
+  border-bottom: 1px solid #D00000;
+}
+.body_text_sidebar {
+  padding: 1.5rem;
+  float: right;
+  text-align: left;
+  background-color: #ddd;
+  height: 100%;
+}
+.body_text_sidebar h1 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1.5rem;
+  padding-bottom: 3rem;
+}
+.body_text_sidebar h2 {
+  font-size: 1.5rem;
+  text-align: left;
+  padding-bottom: 0.5rem;
+}
+.body_text_sidebar p {
+  margin-bottom: 1rem;
+}
+.body_text_sidebar .event {
+  padding: 0.5rem;
+}

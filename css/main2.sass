@@ -1,0 +1,153 @@
+$black: black
+$scarlet: #D00000
+$cream: #FEFDFA
+$gray: #777
+$light-gray: #ddd
+$dark-gray: #313131
+
+$base: $scarlet
+$accent: $cream
+
+$menubar-background-color: $dark-gray
+
+$header-padding: 1.5rem 10%
+$menubar-padding: 0 10%
+$thin-solid-border: 1px solid
+$thin-solid-border-1: 4px solid
+    
+*
+    margin: 0
+    padding: 0
+
+html
+    margin: 0
+    padding: 0
+
+body
+    font-family: "lucida sans", arial, sans-serif
+
+#header
+    background-color: $black
+    padding: $header-padding
+    font-family: 'century gothic', arial, sans-serif
+    font-weight: 100
+    letter-spacing: 0.1rem
+
+    h1
+        color: $base
+        font-size: 3rem
+
+        a
+            color: $gray
+            text-decoration: none
+
+            span
+                color: $base
+
+            &:hover
+                color: $base
+
+    h2
+        color: $gray
+        font-size: 1.2rem
+
+#menubar
+    background-color: $menubar-background-color
+    width: 100%
+    padding: $menubar-padding
+    border-bottom: $thin-solid-border-1 $base
+
+    ul
+
+        li
+            display: inline-block
+            margin: 0 3%
+            margin-top: 0.5rem
+            padding: 0.3rem 2%
+
+            &:first-child
+                margin-left: 0
+
+            &:last-child
+                margin-right: 0
+            
+            a
+                text-align: center
+                color: $cream
+                text-decoration: none
+                padding: 0.5rem
+                font-size: 1.3rem
+            
+                &:hover
+                    color: $base
+            
+            &.selected
+                background-color: $base
+                border-radius: 0.5rem 0.5rem 0 0
+
+.body_text
+    display: grid
+    grid-template-columns: 3fr 1fr
+
+    &_content
+        float: left
+        border-right: 0.5px solid $light-gray
+        padding: 1.5rem 3.5rem
+
+        h1
+            font-size: 2rem
+            text-align: center
+            padding: 1.5rem
+            padding-bottom: 3rem
+            
+        h2
+            font-size: 1.7rem
+            text-align: left
+            padding-bottom: 1rem
+
+        p
+            margin-bottom: 2rem
+            font-size: 1.2rem
+
+        ul
+            margin-left: 2rem
+
+            li
+                font-size: 1.2rem
+
+        a
+            color: $black
+            text-decoration: none
+            border-bottom: 1px dotted $gray
+
+            &:hover
+                color: $base
+                border-bottom: 1px solid $base
+
+    &_sidebar
+        padding: 1.5rem
+        float: right
+        text-align: left
+        background-color: $light-gray
+        height: 100%
+
+        h1
+            font-size: 2rem
+            text-align: center
+            padding: 1.5rem
+            padding-bottom: 3rem
+            
+        h2
+            font-size: 1.5rem
+            text-align: left
+            padding-bottom: 0.5rem
+            
+        p
+            margin-bottom: 1rem
+
+        .event
+            padding: 0.5rem
+
+            &:nth-child(odd)
+                // background-color: $scarlet
+                // color: $cream
