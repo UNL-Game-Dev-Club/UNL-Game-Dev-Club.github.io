@@ -6,10 +6,12 @@
 html {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 body {
   font-family: "lucida sans", arial, sans-serif;
+  height: 80%;
 }
 
 #header {
@@ -40,13 +42,13 @@ body {
 
 #menubar {
   background-color: #313131;
-  width: 100%;
   padding: 0 10%;
   border-bottom: 4px solid #D00000;
+  position: sticky;
 }
 #menubar ul li {
   display: inline-block;
-  margin: 0 3%;
+  margin: 0 1%;
   margin-top: 0.5rem;
   padding: 0.3rem 2%;
 }
@@ -74,11 +76,15 @@ body {
 .body_text {
   display: grid;
   grid-template-columns: 3fr 1fr;
+  padding-left: 10%;
+  min-height: 96%;
+  position: relative;
 }
 .body_text_content {
   float: left;
   border-right: 0.5px solid #ddd;
-  padding: 1.5rem 3.5rem;
+  padding-right: 5%;
+  padding-top: 3rem;
 }
 .body_text_content h1 {
   font-size: 2rem;
@@ -90,6 +96,13 @@ body {
   font-size: 1.7rem;
   text-align: left;
   padding-bottom: 1rem;
+}
+.body_text_content h3 {
+  font-size: 1.3rem;
+}
+.body_text_content h3 .event-date {
+  font-style: italic;
+  font-size: 1.3rem;
 }
 .body_text_content p {
   margin-bottom: 2rem;
@@ -133,4 +146,32 @@ body {
 }
 .body_text_sidebar .event {
   padding: 0.5rem;
+}
+
+.footer {
+  margin-top: 3rem !important;
+  width: 100%;
+  border-top: 4px solid #D00000;
+  text-align: center;
+  background-color: #313131;
+  color: #FEFDFA;
+  padding: 1.5rem 0;
+  font-size: 1.2rem;
+}
+.footer ul li {
+  display: inline-block;
+  padding: 0 3rem;
+  border-right: 1px solid #FEFDFA;
+}
+.footer ul li:last-child {
+  border-right: none;
+}
+.footer ul li a {
+  color: #FEFDFA;
+  text-decoration: none;
+  border-bottom: 1px dotted #D00000;
+}
+.footer ul li a:hover {
+  color: #D00000;
+  border-bottom: 1px solid #D00000;
 }
