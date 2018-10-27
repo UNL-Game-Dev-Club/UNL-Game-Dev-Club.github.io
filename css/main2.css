@@ -157,9 +157,24 @@ body {
 
 .resource {
   margin: 1.5rem 0;
+  padding: 0 2rem;
+}
+.resource h3 {
+  text-align: center;
 }
 .resource p {
   margin-bottom: 1.5rem;
+  text-align: left !important;
+}
+.resource-set {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.resource-section h2 {
+  text-align: center;
+}
+.resource-section p {
+  text-align: center;
 }
 
 .footer {
@@ -308,6 +323,10 @@ body {
   }
   .body_text_sidebar p {
     font-size: 0.8rem;
+  }
+
+  .resource-set {
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 500px) {

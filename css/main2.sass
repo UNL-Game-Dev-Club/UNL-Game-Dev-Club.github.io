@@ -183,8 +183,26 @@ body
 
 .resource
     margin: 1.5rem 0
+    padding: 0 2rem
+
+    h3
+        text-align: center
+    
     p
-            margin-bottom: 1.5rem
+        margin-bottom: 1.5rem
+        text-align: left !important
+        
+    &-set
+        display: grid
+        grid-template-columns: 1fr 1fr
+        // grid-gap: 5rem
+
+    &-section
+        h2
+            text-align: center
+        
+        p
+            text-align: center
 
 .footer
     margin-top: 3rem !important
@@ -338,6 +356,9 @@ body
                 
             p
                 font-size: 0.8rem
+
+    .resource-set
+        grid-template-columns: 1fr
 
 @media (max-width: $small-width-2)
     .footer
