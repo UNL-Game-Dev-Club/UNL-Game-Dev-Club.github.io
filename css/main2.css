@@ -164,16 +164,12 @@ body {
 }
 .resource p {
   margin-bottom: 1.5rem;
-  text-align: left !important;
 }
 .resource-set {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 .resource-section h2 {
-  text-align: center;
-}
-.resource-section p {
   text-align: center;
 }
 
