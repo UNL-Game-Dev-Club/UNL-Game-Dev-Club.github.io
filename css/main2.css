@@ -78,16 +78,13 @@ body {
 
 .body_text {
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  padding-left: 10%;
   min-height: 96%;
   position: relative;
 }
 .body_text_content {
   float: left;
-  border-right: 0.5px solid #ddd;
-  padding-right: 5%;
-  padding-top: 3rem;
+  padding: 0 10%;
+  padding-top: 1rem;
 }
 .body_text_content h1 {
   font-size: 2rem;
@@ -117,6 +114,7 @@ body {
 }
 .body_text_content ul {
   margin-left: 2rem;
+  margin-bottom: 1.5rem;
 }
 .body_text_content ul li {
   font-size: 1.2rem;
@@ -129,6 +127,9 @@ body {
 .body_text_content a:hover {
   color: #D00000;
   border-bottom: 1px solid #D00000;
+}
+.body_text_content:nth-child(even) {
+  background-color: #ddd;
 }
 .body_text_sidebar {
   padding: 1.5rem;
@@ -173,8 +174,13 @@ body {
   text-align: center;
 }
 
+#roles {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 2fr;
+}
+
 .footer {
-  margin-top: 3rem !important;
   width: 100%;
   border-top: 4px solid #D00000;
   text-align: center;
@@ -213,9 +219,6 @@ body {
     margin: 0;
   }
 
-  .body_text {
-    grid-template-columns: 70% 30%;
-  }
   .body_text_sidebar h1 {
     font-size: 1.5rem;
     text-align: center;

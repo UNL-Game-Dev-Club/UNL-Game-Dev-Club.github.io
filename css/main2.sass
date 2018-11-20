@@ -99,17 +99,16 @@ body
 
 .body_text
     display: grid
-    grid-template-columns: 3fr 1fr
-    padding-left: 10%
+    // grid-template-columns: 3fr 1fr
     // width: 100%
     min-height: 96%
     position: relative
 
     &_content
         float: left
-        border-right: 0.5px solid $light-gray
-        padding-right: 5%
-        padding-top: 3rem
+        // border-right: 0.5px solid $light-gray
+        padding: 0 10%
+        padding-top: 1rem
 
         h1
             font-size: 2rem
@@ -140,6 +139,7 @@ body
 
         ul
             margin-left: 2rem
+            margin-bottom: 1.5rem
 
             li
                 font-size: 1.2rem
@@ -152,6 +152,9 @@ body
             &:hover
                 color: $base
                 border-bottom: 1px solid $base
+
+        &:nth-child(even)
+            background-color: $light-gray
 
     &_sidebar
         padding: 1.5rem
@@ -199,9 +202,17 @@ body
     &-section
         h2
             text-align: center
+
+        // &:nth-child(even)
+        //     background-color: $light-gray
+
+#roles
+    width: 60%
+    display: grid
+    grid-template-columns: 1.5fr 1fr 2fr
         
 .footer
-    margin-top: 3rem !important
+    // margin-top: 3rem !important
     width: 100%
     border-top: $thin-solid-border-1 $base
     text-align: center
@@ -241,7 +252,7 @@ body
                 margin: 0
 
     .body_text
-        grid-template-columns: 70% 30%
+        // grid-template-columns: 70% 30%
 
         &_sidebar
             h1
