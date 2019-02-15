@@ -1,6 +1,6 @@
 @ECHO OFF
 
-SET default_watch=css
+SET default_watch=sass:css
 SET default_style=expanded
 SET default_sourcemap=none
 
