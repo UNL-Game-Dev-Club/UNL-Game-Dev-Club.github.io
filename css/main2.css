@@ -70,7 +70,6 @@ body {
 }
 #menubar ul li.selected {
   background-color: #D00000;
-  border-radius: 0.5rem 0.5rem 0 0;
 }
 #menubar ul li.selected a:hover {
   color: #FEFDFA;
@@ -174,10 +173,20 @@ body {
   text-align: center;
 }
 
-#roles {
-  width: 60%;
+#officer_roles {
+  width: 100%;
   display: grid;
-  grid-template-columns: 1.5fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#officer_roles .role h3 {
+  padding-bottom: 0.5rem;
+}
+#officer_roles .role p {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#officer_roles .role p:last-child {
+  margin-bottom: 1.5rem;
 }
 
 .footer {
@@ -336,6 +345,16 @@ body {
   }
   .footer ul li {
     border-right: none;
+  }
+
+  #officer_roles {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  #menubar ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 @media (max-width: 320px) {
