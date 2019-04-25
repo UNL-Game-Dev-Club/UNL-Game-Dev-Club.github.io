@@ -97,13 +97,14 @@ body
                 & a:hover
                     color: $accent
 
-.body_text
-    display: grid
-    // grid-template-columns: 3fr 1fr
-    // width: 100%
-    min-height: 96%
-    position: relative
+.clear_margin_and_padding
+    margin: 0 !important
+    padding: 0 !important
 
+.center
+    text-align: center !important
+
+.header
     &_content
         float: left
         // border-right: 0.5px solid $light-gray
@@ -153,15 +154,15 @@ body
                 color: $base
                 border-bottom: 1px solid $base
 
-        &:nth-child(even)
-            background-color: $light-gray
+.body_text
+    display: grid
+    min-height: 96%
+    position: relative
 
-    &_sidebar
-        padding: 1.5rem
-        float: right
-        text-align: left
-        background-color: $light-gray
-        height: 100%
+    &_content
+        float: left
+        padding: 0 10%
+        padding-top: 1rem
 
         h1
             font-size: 2rem
@@ -170,19 +171,134 @@ body
             padding-bottom: 3rem
             
         h2
-            font-size: 1.5rem
+            font-size: 1.7rem
             text-align: left
-            padding-bottom: 0.5rem
-            
+            padding-bottom: 1rem
+            // color: $base
+
+        h3
+            color: $base
+            font-size: 1.3rem
+
+            .event-date
+                font-style: italic
+                font-size: 1.3rem
+
+        hr
+            margin-bottom: 2rem
+
         p
-            margin-bottom: 1rem
+            margin-bottom: 1.5rem
+            font-size: 1.2rem
 
-        .event
-            padding: 0.5rem
+        ul
+            margin-left: 2rem
+            margin-bottom: 1.5rem
 
-            &:nth-child(odd)
-                // background-color: $scarlet
-                // color: $cream
+            li
+                font-size: 1.2rem
+
+        a
+            color: $black
+            text-decoration: none
+            border-bottom: 1px dotted $base
+
+            &:hover
+                color: $base
+                border-bottom: 1px solid $base
+
+        &:nth-child(even)
+            background-color: $light-gray
+
+
+    #competition, #event, #meeting, #long_term, #demo
+        &_news, &_projects
+            padding: 0 10%
+
+            h1
+                text-align: center
+                margin-bottom: 2rem
+                color: $scarlet
+
+            .news, .project
+                &_content
+                    // width: 100%
+                    padding-left: 2rem
+                    padding-right: 2rem
+
+                    &:nth-child(2)
+                        border-top: none
+
+                    &:last-child
+                        border-bottom: none
+
+                    &:nth-child(even)
+                        background-color: $light-gray
+
+.news, .project
+    display: grid
+    min-height: 96%
+    position: relative
+
+    &_content
+        float: left
+        // padding: 0 10%
+        padding-top: 1rem
+
+        h1
+            font-size: 2rem
+            text-align: center
+            padding: 1.5rem
+            padding-bottom: 3rem
+            
+        h2
+            font-size: 1.7rem
+            text-align: left
+            padding-bottom: 1rem
+            // color: $base
+
+        h3
+            color: $base
+            font-size: 1.3rem
+
+            .event-date
+                font-style: italic
+                font-size: 1.3rem
+
+        hr
+            margin-bottom: 2rem
+
+        p
+            margin-bottom: 1.5rem
+            font-size: 1.2rem
+
+        ul
+            margin-left: 2rem
+            margin-bottom: 1.5rem
+
+            li
+                font-size: 1.2rem
+
+        a
+            color: $black
+            text-decoration: none
+            border-bottom: 1px dotted $base
+
+            &:hover
+                color: $base
+                border-bottom: 1px solid $base
+
+        &:nth-child(even)
+            // background-color: $light-gray
+            // border-top: 1px dotted black
+            // border-bottom: 1px dotted black
+
+hr
+    &.partial
+        width: 80%
+        margin: 0 auto
+        margin-bottom: 3rem
+        margin-top: 2rem
 
 .resource
     margin: 1.5rem 0
@@ -202,9 +318,6 @@ body
     &-section
         h2
             text-align: center
-
-        // &:nth-child(even)
-        //     background-color: $light-gray
 
 #officer_roles
     width: 100%
@@ -287,6 +400,17 @@ body
                 &:nth-child(odd)
                     // background-color: $scarlet
                     // color: $cream
+    #officer_roles
+        grid-template-columns: 1fr 1fr
+
+        .role
+            text-align: center
+
+    h1, h2, h3, h4, h5, h6
+        &.center_heading
+            text-align: center
+            margin-top: 1rem
+            margin-bottom: 1rem
 
 @media (max-width: $small-width)
     #menubar

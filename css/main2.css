@@ -75,6 +75,63 @@ body {
   color: #FEFDFA;
 }
 
+.clear_margin_and_padding {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.center {
+  text-align: center !important;
+}
+
+.header_content {
+  float: left;
+  padding: 0 10%;
+  padding-top: 1rem;
+}
+.header_content h1 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 1.5rem;
+  padding-bottom: 3rem;
+}
+.header_content h2 {
+  font-size: 1.7rem;
+  text-align: left;
+  padding-bottom: 1rem;
+}
+.header_content h3 {
+  color: #D00000;
+  font-size: 1.3rem;
+}
+.header_content h3 .event-date {
+  font-style: italic;
+  font-size: 1.3rem;
+}
+.header_content hr {
+  margin-bottom: 2rem;
+}
+.header_content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+.header_content ul {
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+.header_content ul li {
+  font-size: 1.2rem;
+}
+.header_content a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px dotted #D00000;
+}
+.header_content a:hover {
+  color: #D00000;
+  border-bottom: 1px solid #D00000;
+}
+
 .body_text {
   display: grid;
   min-height: 96%;
@@ -130,29 +187,85 @@ body {
 .body_text_content:nth-child(even) {
   background-color: #ddd;
 }
-.body_text_sidebar {
-  padding: 1.5rem;
-  float: right;
-  text-align: left;
-  background-color: #ddd;
-  height: 100%;
+.body_text #competition_news, .body_text #competition_projects, .body_text #event_news, .body_text #event_projects, .body_text #meeting_news, .body_text #meeting_projects, .body_text #long_term_news, .body_text #long_term_projects, .body_text #demo_news, .body_text #demo_projects {
+  padding: 0 10%;
 }
-.body_text_sidebar h1 {
+.body_text #competition_news h1, .body_text #competition_projects h1, .body_text #event_news h1, .body_text #event_projects h1, .body_text #meeting_news h1, .body_text #meeting_projects h1, .body_text #long_term_news h1, .body_text #long_term_projects h1, .body_text #demo_news h1, .body_text #demo_projects h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #D00000;
+}
+.body_text #competition_news .news_content, .body_text #competition_news .project_content, .body_text #competition_projects .news_content, .body_text #competition_projects .project_content, .body_text #event_news .news_content, .body_text #event_news .project_content, .body_text #event_projects .news_content, .body_text #event_projects .project_content, .body_text #meeting_news .news_content, .body_text #meeting_news .project_content, .body_text #meeting_projects .news_content, .body_text #meeting_projects .project_content, .body_text #long_term_news .news_content, .body_text #long_term_news .project_content, .body_text #long_term_projects .news_content, .body_text #long_term_projects .project_content, .body_text #demo_news .news_content, .body_text #demo_news .project_content, .body_text #demo_projects .news_content, .body_text #demo_projects .project_content {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.body_text #competition_news .news_content:nth-child(2), .body_text #competition_news .project_content:nth-child(2), .body_text #competition_projects .news_content:nth-child(2), .body_text #competition_projects .project_content:nth-child(2), .body_text #event_news .news_content:nth-child(2), .body_text #event_news .project_content:nth-child(2), .body_text #event_projects .news_content:nth-child(2), .body_text #event_projects .project_content:nth-child(2), .body_text #meeting_news .news_content:nth-child(2), .body_text #meeting_news .project_content:nth-child(2), .body_text #meeting_projects .news_content:nth-child(2), .body_text #meeting_projects .project_content:nth-child(2), .body_text #long_term_news .news_content:nth-child(2), .body_text #long_term_news .project_content:nth-child(2), .body_text #long_term_projects .news_content:nth-child(2), .body_text #long_term_projects .project_content:nth-child(2), .body_text #demo_news .news_content:nth-child(2), .body_text #demo_news .project_content:nth-child(2), .body_text #demo_projects .news_content:nth-child(2), .body_text #demo_projects .project_content:nth-child(2) {
+  border-top: none;
+}
+.body_text #competition_news .news_content:last-child, .body_text #competition_news .project_content:last-child, .body_text #competition_projects .news_content:last-child, .body_text #competition_projects .project_content:last-child, .body_text #event_news .news_content:last-child, .body_text #event_news .project_content:last-child, .body_text #event_projects .news_content:last-child, .body_text #event_projects .project_content:last-child, .body_text #meeting_news .news_content:last-child, .body_text #meeting_news .project_content:last-child, .body_text #meeting_projects .news_content:last-child, .body_text #meeting_projects .project_content:last-child, .body_text #long_term_news .news_content:last-child, .body_text #long_term_news .project_content:last-child, .body_text #long_term_projects .news_content:last-child, .body_text #long_term_projects .project_content:last-child, .body_text #demo_news .news_content:last-child, .body_text #demo_news .project_content:last-child, .body_text #demo_projects .news_content:last-child, .body_text #demo_projects .project_content:last-child {
+  border-bottom: none;
+}
+.body_text #competition_news .news_content:nth-child(even), .body_text #competition_news .project_content:nth-child(even), .body_text #competition_projects .news_content:nth-child(even), .body_text #competition_projects .project_content:nth-child(even), .body_text #event_news .news_content:nth-child(even), .body_text #event_news .project_content:nth-child(even), .body_text #event_projects .news_content:nth-child(even), .body_text #event_projects .project_content:nth-child(even), .body_text #meeting_news .news_content:nth-child(even), .body_text #meeting_news .project_content:nth-child(even), .body_text #meeting_projects .news_content:nth-child(even), .body_text #meeting_projects .project_content:nth-child(even), .body_text #long_term_news .news_content:nth-child(even), .body_text #long_term_news .project_content:nth-child(even), .body_text #long_term_projects .news_content:nth-child(even), .body_text #long_term_projects .project_content:nth-child(even), .body_text #demo_news .news_content:nth-child(even), .body_text #demo_news .project_content:nth-child(even), .body_text #demo_projects .news_content:nth-child(even), .body_text #demo_projects .project_content:nth-child(even) {
+  background-color: #ddd;
+}
+
+.news, .project {
+  display: grid;
+  min-height: 96%;
+  position: relative;
+}
+.news_content, .project_content {
+  float: left;
+  padding-top: 1rem;
+}
+.news_content h1, .project_content h1 {
   font-size: 2rem;
   text-align: center;
   padding: 1.5rem;
   padding-bottom: 3rem;
 }
-.body_text_sidebar h2 {
-  font-size: 1.5rem;
+.news_content h2, .project_content h2 {
+  font-size: 1.7rem;
   text-align: left;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
 }
-.body_text_sidebar p {
-  margin-bottom: 1rem;
+.news_content h3, .project_content h3 {
+  color: #D00000;
+  font-size: 1.3rem;
 }
-.body_text_sidebar .event {
-  padding: 0.5rem;
+.news_content h3 .event-date, .project_content h3 .event-date {
+  font-style: italic;
+  font-size: 1.3rem;
+}
+.news_content hr, .project_content hr {
+  margin-bottom: 2rem;
+}
+.news_content p, .project_content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+.news_content ul, .project_content ul {
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+}
+.news_content ul li, .project_content ul li {
+  font-size: 1.2rem;
+}
+.news_content a, .project_content a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px dotted #D00000;
+}
+.news_content a:hover, .project_content a:hover {
+  color: #D00000;
+  border-bottom: 1px solid #D00000;
+}
+
+hr.partial {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
 }
 
 .resource {
@@ -245,6 +358,19 @@ body {
   }
   .body_text_sidebar .event {
     padding: 0.5rem;
+  }
+
+  #officer_roles {
+    grid-template-columns: 1fr 1fr;
+  }
+  #officer_roles .role {
+    text-align: center;
+  }
+
+  h1.center_heading, h2.center_heading, h3.center_heading, h4.center_heading, h5.center_heading, h6.center_heading {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 @media (max-width: 810px) {
