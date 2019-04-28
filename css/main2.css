@@ -196,6 +196,7 @@ body {
   color: #D00000;
 }
 .body_text #competition_news .news_content, .body_text #competition_news .project_content, .body_text #competition_projects .news_content, .body_text #competition_projects .project_content, .body_text #event_news .news_content, .body_text #event_news .project_content, .body_text #event_projects .news_content, .body_text #event_projects .project_content, .body_text #meeting_news .news_content, .body_text #meeting_news .project_content, .body_text #meeting_projects .news_content, .body_text #meeting_projects .project_content, .body_text #long_term_news .news_content, .body_text #long_term_news .project_content, .body_text #long_term_projects .news_content, .body_text #long_term_projects .project_content, .body_text #demo_news .news_content, .body_text #demo_news .project_content, .body_text #demo_projects .news_content, .body_text #demo_projects .project_content {
+  width: 100%;
   padding-left: 2rem;
   padding-right: 2rem;
 }
