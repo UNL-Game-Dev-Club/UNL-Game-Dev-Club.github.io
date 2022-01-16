@@ -125,11 +125,11 @@ body {
 .header_content a {
   color: black;
   text-decoration: none;
-  border-bottom: 1px dotted #D00000;
+  border-bottom: 2px dotted #D00000;
 }
 .header_content a:hover {
   color: #D00000;
-  border-bottom: 1px solid #D00000;
+  border-bottom: 2px solid #D00000;
 }
 
 .body_text, .news, .project {
@@ -183,11 +183,11 @@ body {
 .body_text_content a, .news_content a, .project_content a {
   color: black;
   text-decoration: none;
-  border-bottom: 1px dotted #D00000;
+  border-bottom: 2px dotted #D00000;
 }
 .body_text_content a:hover, .news_content a:hover, .project_content a:hover {
   color: #D00000;
-  border-bottom: 1px solid #D00000;
+  border-bottom: 2px solid #D00000;
 }
 .body_text_content:nth-child(even), .news_content:nth-child(even), .project_content:nth-child(even) {
   background-color: #ddd;
@@ -278,11 +278,11 @@ hr.partial {
 .footer ul li a {
   color: #FEFDFA;
   text-decoration: none;
-  border-bottom: 1px dotted #D00000;
+  border-bottom: 2px dotted #D00000;
 }
 .footer ul li a:hover {
   color: #D00000;
-  border-bottom: 1px solid #D00000;
+  border-bottom: 2px solid #D00000;
 }
 
 @media (max-width: 1112px) {
