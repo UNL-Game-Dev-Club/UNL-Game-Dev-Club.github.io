@@ -14,74 +14,65 @@ body {
   height: 80%;
 }
 
-#header {
+.header {
   background-color: black;
   padding: 1.5rem 10%;
   font-family: "century gothic", arial, sans-serif;
   font-weight: 100;
   letter-spacing: 0.1rem;
 }
-#header h1 {
+.header h1 {
   color: #D00000;
   font-size: 3rem;
 }
-#header h1 a {
+.header h1 a {
   color: #777;
   text-decoration: none;
 }
-#header h1 a span {
+.header h1 a span {
   color: #D00000;
 }
-#header h1 a:hover {
+.header h1 a:hover {
   color: #D00000;
 }
-#header h2 {
+.header h2 {
   color: #777;
   font-size: 1.2rem;
 }
 
-#menubar {
+.menubar {
   background-color: #313131;
   padding: 0 10%;
   border-bottom: 4px solid #D00000;
   position: sticky;
 }
-#menubar ul li {
+.menubar ul li {
   display: inline-block;
   margin: 0 1%;
   margin-top: 0.5rem;
   padding: 0.3rem 2%;
 }
-#menubar ul li:first-child {
+.menubar ul li:first-child {
   margin-left: 0;
 }
-#menubar ul li:last-child {
+.menubar ul li:last-child {
   margin-right: 0;
 }
-#menubar ul li a {
+.menubar ul li a {
   text-align: center;
   color: #FEFDFA;
   text-decoration: none;
   padding: 0.5rem;
   font-size: 1.3rem;
 }
-#menubar ul li a:hover {
+.menubar ul li a:hover {
   color: #D00000;
 }
-#menubar ul li.selected {
+.menubar ul li.selected {
   background-color: #D00000;
 }
-#menubar ul li.selected a:hover {
+.menubar ul li.selected a:hover {
   color: #FEFDFA;
-}
-
-.clear_margin_and_padding {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.center {
-  text-align: center !important;
 }
 
 .header_content {
@@ -192,27 +183,27 @@ body {
 .body_text_content:nth-child(even), .news_content:nth-child(even), .project_content:nth-child(even) {
   background-color: #ddd;
 }
-.body_text #competition_news, .body_text #competition_projects, .body_text #event_news, .body_text #event_projects, .body_text #meeting_news, .body_text #meeting_projects, .body_text #long_term_news, .body_text #long_term_projects, .body_text #demo_news, .body_text #demo_projects, .news #competition_news, .news #competition_projects, .news #event_news, .news #event_projects, .news #meeting_news, .news #meeting_projects, .news #long_term_news, .news #long_term_projects, .news #demo_news, .news #demo_projects, .project #competition_news, .project #competition_projects, .project #event_news, .project #event_projects, .project #meeting_news, .project #meeting_projects, .project #long_term_news, .project #long_term_projects, .project #demo_news, .project #demo_projects {
+.body_text .news, .projects {
   padding: 0 10%;
 }
-.body_text #competition_news h1, .body_text #competition_projects h1, .body_text #event_news h1, .body_text #event_projects h1, .body_text #meeting_news h1, .body_text #meeting_projects h1, .body_text #long_term_news h1, .body_text #long_term_projects h1, .body_text #demo_news h1, .body_text #demo_projects h1, .news #competition_news h1, .news #competition_projects h1, .news #event_news h1, .news #event_projects h1, .news #meeting_news h1, .news #meeting_projects h1, .news #long_term_news h1, .news #long_term_projects h1, .news #demo_news h1, .news #demo_projects h1, .project #competition_news h1, .project #competition_projects h1, .project #event_news h1, .project #event_projects h1, .project #meeting_news h1, .project #meeting_projects h1, .project #long_term_news h1, .project #long_term_projects h1, .project #demo_news h1, .project #demo_projects h1 {
+.body_text .news h1, .body_text .projects h1 {
   text-align: center;
   margin-bottom: 2rem;
   color: #D00000;
 }
-.body_text #competition_news .news_content, .body_text #competition_news .project_content, .body_text #competition_projects .news_content, .body_text #competition_projects .project_content, .body_text #event_news .news_content, .body_text #event_news .project_content, .body_text #event_projects .news_content, .body_text #event_projects .project_content, .body_text #meeting_news .news_content, .body_text #meeting_news .project_content, .body_text #meeting_projects .news_content, .body_text #meeting_projects .project_content, .body_text #long_term_news .news_content, .body_text #long_term_news .project_content, .body_text #long_term_projects .news_content, .body_text #long_term_projects .project_content, .body_text #demo_news .news_content, .body_text #demo_news .project_content, .body_text #demo_projects .news_content, .body_text #demo_projects .project_content, .news #competition_news .news_content, .news #competition_news .project_content, .news #competition_projects .news_content, .news #competition_projects .project_content, .news #event_news .news_content, .news #event_news .project_content, .news #event_projects .news_content, .news #event_projects .project_content, .news #meeting_news .news_content, .news #meeting_news .project_content, .news #meeting_projects .news_content, .news #meeting_projects .project_content, .news #long_term_news .news_content, .news #long_term_news .project_content, .news #long_term_projects .news_content, .news #long_term_projects .project_content, .news #demo_news .news_content, .news #demo_news .project_content, .news #demo_projects .news_content, .news #demo_projects .project_content, .project #competition_news .news_content, .project #competition_news .project_content, .project #competition_projects .news_content, .project #competition_projects .project_content, .project #event_news .news_content, .project #event_news .project_content, .project #event_projects .news_content, .project #event_projects .project_content, .project #meeting_news .news_content, .project #meeting_news .project_content, .project #meeting_projects .news_content, .project #meeting_projects .project_content, .project #long_term_news .news_content, .project #long_term_news .project_content, .project #long_term_projects .news_content, .project #long_term_projects .project_content, .project #demo_news .news_content, .project #demo_news .project_content, .project #demo_projects .news_content, .project #demo_projects .project_content {
+.body_text .news .news_content, .body_text .projects .project_content {
   box-sizing: border-box;
   width: 100%;
   padding-left: 2rem;
   padding-right: 2rem;
 }
-.body_text #competition_news .news_content:nth-child(2), .body_text #competition_news .project_content:nth-child(2), .body_text #competition_projects .news_content:nth-child(2), .body_text #competition_projects .project_content:nth-child(2), .body_text #event_news .news_content:nth-child(2), .body_text #event_news .project_content:nth-child(2), .body_text #event_projects .news_content:nth-child(2), .body_text #event_projects .project_content:nth-child(2), .body_text #meeting_news .news_content:nth-child(2), .body_text #meeting_news .project_content:nth-child(2), .body_text #meeting_projects .news_content:nth-child(2), .body_text #meeting_projects .project_content:nth-child(2), .body_text #long_term_news .news_content:nth-child(2), .body_text #long_term_news .project_content:nth-child(2), .body_text #long_term_projects .news_content:nth-child(2), .body_text #long_term_projects .project_content:nth-child(2), .body_text #demo_news .news_content:nth-child(2), .body_text #demo_news .project_content:nth-child(2), .body_text #demo_projects .news_content:nth-child(2), .body_text #demo_projects .project_content:nth-child(2), .news #competition_news .news_content:nth-child(2), .news #competition_news .project_content:nth-child(2), .news #competition_projects .news_content:nth-child(2), .news #competition_projects .project_content:nth-child(2), .news #event_news .news_content:nth-child(2), .news #event_news .project_content:nth-child(2), .news #event_projects .news_content:nth-child(2), .news #event_projects .project_content:nth-child(2), .news #meeting_news .news_content:nth-child(2), .news #meeting_news .project_content:nth-child(2), .news #meeting_projects .news_content:nth-child(2), .news #meeting_projects .project_content:nth-child(2), .news #long_term_news .news_content:nth-child(2), .news #long_term_news .project_content:nth-child(2), .news #long_term_projects .news_content:nth-child(2), .news #long_term_projects .project_content:nth-child(2), .news #demo_news .news_content:nth-child(2), .news #demo_news .project_content:nth-child(2), .news #demo_projects .news_content:nth-child(2), .news #demo_projects .project_content:nth-child(2), .project #competition_news .news_content:nth-child(2), .project #competition_news .project_content:nth-child(2), .project #competition_projects .news_content:nth-child(2), .project #competition_projects .project_content:nth-child(2), .project #event_news .news_content:nth-child(2), .project #event_news .project_content:nth-child(2), .project #event_projects .news_content:nth-child(2), .project #event_projects .project_content:nth-child(2), .project #meeting_news .news_content:nth-child(2), .project #meeting_news .project_content:nth-child(2), .project #meeting_projects .news_content:nth-child(2), .project #meeting_projects .project_content:nth-child(2), .project #long_term_news .news_content:nth-child(2), .project #long_term_news .project_content:nth-child(2), .project #long_term_projects .news_content:nth-child(2), .project #long_term_projects .project_content:nth-child(2), .project #demo_news .news_content:nth-child(2), .project #demo_news .project_content:nth-child(2), .project #demo_projects .news_content:nth-child(2), .project #demo_projects .project_content:nth-child(2) {
+.body_text .news .news_content:nth-child(2), .body_text .projects .project_content:nth-child(2) {
   border-top: none;
 }
-.body_text #competition_news .news_content:last-child, .body_text #competition_news .project_content:last-child, .body_text #competition_projects .news_content:last-child, .body_text #competition_projects .project_content:last-child, .body_text #event_news .news_content:last-child, .body_text #event_news .project_content:last-child, .body_text #event_projects .news_content:last-child, .body_text #event_projects .project_content:last-child, .body_text #meeting_news .news_content:last-child, .body_text #meeting_news .project_content:last-child, .body_text #meeting_projects .news_content:last-child, .body_text #meeting_projects .project_content:last-child, .body_text #long_term_news .news_content:last-child, .body_text #long_term_news .project_content:last-child, .body_text #long_term_projects .news_content:last-child, .body_text #long_term_projects .project_content:last-child, .body_text #demo_news .news_content:last-child, .body_text #demo_news .project_content:last-child, .body_text #demo_projects .news_content:last-child, .body_text #demo_projects .project_content:last-child, .news #competition_news .news_content:last-child, .news #competition_news .project_content:last-child, .news #competition_projects .news_content:last-child, .news #competition_projects .project_content:last-child, .news #event_news .news_content:last-child, .news #event_news .project_content:last-child, .news #event_projects .news_content:last-child, .news #event_projects .project_content:last-child, .news #meeting_news .news_content:last-child, .news #meeting_news .project_content:last-child, .news #meeting_projects .news_content:last-child, .news #meeting_projects .project_content:last-child, .news #long_term_news .news_content:last-child, .news #long_term_news .project_content:last-child, .news #long_term_projects .news_content:last-child, .news #long_term_projects .project_content:last-child, .news #demo_news .news_content:last-child, .news #demo_news .project_content:last-child, .news #demo_projects .news_content:last-child, .news #demo_projects .project_content:last-child, .project #competition_news .news_content:last-child, .project #competition_news .project_content:last-child, .project #competition_projects .news_content:last-child, .project #competition_projects .project_content:last-child, .project #event_news .news_content:last-child, .project #event_news .project_content:last-child, .project #event_projects .news_content:last-child, .project #event_projects .project_content:last-child, .project #meeting_news .news_content:last-child, .project #meeting_news .project_content:last-child, .project #meeting_projects .news_content:last-child, .project #meeting_projects .project_content:last-child, .project #long_term_news .news_content:last-child, .project #long_term_news .project_content:last-child, .project #long_term_projects .news_content:last-child, .project #long_term_projects .project_content:last-child, .project #demo_news .news_content:last-child, .project #demo_news .project_content:last-child, .project #demo_projects .news_content:last-child, .project #demo_projects .project_content:last-child {
+.body_text .news .news_content:last-child, .body_text .projects .project_content:last-child {
   border-bottom: none;
 }
-.body_text #competition_news .news_content:nth-child(even), .body_text #competition_news .project_content:nth-child(even), .body_text #competition_projects .news_content:nth-child(even), .body_text #competition_projects .project_content:nth-child(even), .body_text #event_news .news_content:nth-child(even), .body_text #event_news .project_content:nth-child(even), .body_text #event_projects .news_content:nth-child(even), .body_text #event_projects .project_content:nth-child(even), .body_text #meeting_news .news_content:nth-child(even), .body_text #meeting_news .project_content:nth-child(even), .body_text #meeting_projects .news_content:nth-child(even), .body_text #meeting_projects .project_content:nth-child(even), .body_text #long_term_news .news_content:nth-child(even), .body_text #long_term_news .project_content:nth-child(even), .body_text #long_term_projects .news_content:nth-child(even), .body_text #long_term_projects .project_content:nth-child(even), .body_text #demo_news .news_content:nth-child(even), .body_text #demo_news .project_content:nth-child(even), .body_text #demo_projects .news_content:nth-child(even), .body_text #demo_projects .project_content:nth-child(even), .news #competition_news .news_content:nth-child(even), .news #competition_news .project_content:nth-child(even), .news #competition_projects .news_content:nth-child(even), .news #competition_projects .project_content:nth-child(even), .news #event_news .news_content:nth-child(even), .news #event_news .project_content:nth-child(even), .news #event_projects .news_content:nth-child(even), .news #event_projects .project_content:nth-child(even), .news #meeting_news .news_content:nth-child(even), .news #meeting_news .project_content:nth-child(even), .news #meeting_projects .news_content:nth-child(even), .news #meeting_projects .project_content:nth-child(even), .news #long_term_news .news_content:nth-child(even), .news #long_term_news .project_content:nth-child(even), .news #long_term_projects .news_content:nth-child(even), .news #long_term_projects .project_content:nth-child(even), .news #demo_news .news_content:nth-child(even), .news #demo_news .project_content:nth-child(even), .news #demo_projects .news_content:nth-child(even), .news #demo_projects .project_content:nth-child(even), .project #competition_news .news_content:nth-child(even), .project #competition_news .project_content:nth-child(even), .project #competition_projects .news_content:nth-child(even), .project #competition_projects .project_content:nth-child(even), .project #event_news .news_content:nth-child(even), .project #event_news .project_content:nth-child(even), .project #event_projects .news_content:nth-child(even), .project #event_projects .project_content:nth-child(even), .project #meeting_news .news_content:nth-child(even), .project #meeting_news .project_content:nth-child(even), .project #meeting_projects .news_content:nth-child(even), .project #meeting_projects .project_content:nth-child(even), .project #long_term_news .news_content:nth-child(even), .project #long_term_news .project_content:nth-child(even), .project #long_term_projects .news_content:nth-child(even), .project #long_term_projects .project_content:nth-child(even), .project #demo_news .news_content:nth-child(even), .project #demo_news .project_content:nth-child(even), .project #demo_projects .news_content:nth-child(even), .project #demo_projects .project_content:nth-child(even) {
+.body_text .news .news_content:nth-child(even), .body_text .projects .project_content:nth-child(even) {
   background-color: #ddd;
 }
 
@@ -241,19 +232,19 @@ hr.partial {
   text-align: center;
 }
 
-#officer_roles {
+.officer_roles {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-#officer_roles .role h3 {
+.officer_roles .role h3 {
   padding-bottom: 0.5rem;
 }
-#officer_roles .role p {
+.officer_roles .role p {
   padding-bottom: 0;
   margin-bottom: 0;
 }
-#officer_roles .role p:last-child {
+.officer_roles .role p:last-child {
   margin-bottom: 1.5rem;
 }
 
@@ -286,14 +277,14 @@ hr.partial {
 }
 
 @media (max-width: 1112px) {
-  #menubar ul {
+  .menubar ul {
     padding: 0;
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
   }
-  #menubar ul li {
+  .menubar ul li {
     margin: 0;
   }
 
@@ -316,10 +307,10 @@ hr.partial {
     padding: 0.5rem;
   }
 
-  #officer_roles {
+  .officer_roles {
     grid-template-columns: 1fr 1fr;
   }
-  #officer_roles .role {
+  .officer_roles .role {
     text-align: center;
   }
 
@@ -330,14 +321,14 @@ hr.partial {
   }
 }
 @media (max-width: 810px) {
-  #menubar ul {
+  .menubar ul {
     padding: 0;
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
   }
-  #menubar ul li {
+  .menubar ul li {
     margin: 0;
   }
 
@@ -369,21 +360,21 @@ hr.partial {
   }
 }
 @media (max-width: 620px) {
-  #header h1 {
+  .header h1 {
     font-size: 1.7rem;
     text-align: center;
   }
-  #header h2 {
+  .header h2 {
     font-size: 1rem;
     text-align: center;
   }
 
-  #menubar ul {
+  .menubar ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
   }
-  #menubar ul li a {
+  .menubar ul li a {
     font-size: 1rem;
   }
 
@@ -429,12 +420,12 @@ hr.partial {
     border-right: none;
   }
 
-  #officer_roles {
+  .officer_roles {
     grid-template-columns: 1fr;
     text-align: center;
   }
 
-  #menubar ul {
+  .menubar ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
