@@ -145,106 +145,141 @@ body {
 	border-bottom: 2px solid #d00;
 }
 
-.body-text, .news, .project {
+.body-text,
+.news,
+.project {
 	display: grid;
 	min-height: 96%;
 	position: relative;
 }
 
-.body-text-content, .news-content, .project-content {
+.body-text-content,
+.news-content,
+.project-content {
 	float: left;
 	padding: 0 10%;
 	padding-top: 1rem;
 }
 
-.body-text-content h1, .news-content h1, .project-content h1 {
+.body-text-content h1,
+.news-content h1,
+.project-content h1 {
 	font-size: 2rem;
 	text-align: center;
 	padding: 1.5rem;
 	padding-bottom: 3rem;
 }
 
-.body-text-content h2, .news-content h2, .project-content h2 {
+.body-text-content h2,
+.news-content h2,
+.project-content h2 {
 	font-size: 1.7rem;
 	text-align: left;
 	padding-bottom: 1rem;
 }
 
-.body-text-content h3, .news-content h3, .project-content h3 {
+.body-text-content h3,
+.news-content h3,
+.project-content h3 {
 	color: #d00;
 	font-size: 1.3rem;
 }
 
-.body-text-content h3 .event-date, .news-content h3 .event-date, .project-content h3 .event-date {
+.body-text-content h3 .event-date,
+.news-content h3 .event-date,
+.project-content h3 .event-date {
 	font-style: italic;
 	font-size: 1.3rem;
 }
 
-.body-text-content hr, .news-content hr, .project-content hr {
+.body-text-content hr,
+.news-content hr,
+.project-content hr {
 	margin-bottom: 2rem;
 }
 
-.body-text-content p, .news-content p, .project-content p {
+.body-text-content p,
+.news-content p,
+.project-content p {
 	margin-bottom: 1.5rem;
 	font-size: 1.2rem;
 }
 
-.body-text-content ul, .news-content ul, .project-content ul {
+.body-text-content ul,
+.news-content ul,
+.project-content ul {
 	margin-left: 2rem;
 	margin-bottom: 1.5rem;
 }
 
-.body-text-content ul li, .news-content ul li, .project-content ul li {
+.body-text-content ul li,
+.news-content ul li,
+.project-content ul li {
 	font-size: 1.2rem;
 }
 
-.body-text-content, .news-content, .project-content, .image {
+.body-text-content,
+.news-content,
+.project-content,
+.image {
 	float: left;
 	padding-bottom: 16px;
 	padding-right: 32px;
 }
 
-.body-text-content a, .news-content a, .project-content a {
+.body-text-content a,
+.news-content a,
+.project-content a {
 	color: black;
 	text-decoration: none;
 	border-bottom: 2px dotted #d00;
 }
 
-.body-text-content a:hover, .news-content a:hover, .project-content a:hover {
+.body-text-content a:hover,
+.news-content a:hover,
+.project-content a:hover {
 	color: #d00;
 	border-bottom: 2px solid #d00;
 }
 
-.body-text-content:nth-child(even), .news-content:nth-child(even), .project-content:nth-child(even) {
+.body-text-content:nth-child(even),
+.news-content:nth-child(even),
+.project-content:nth-child(even) {
 	background-color: #ddd;
 }
 
-.body-text .news, .projects {
+.body-text .news,
+.projects {
 	padding: 0 10%;
 }
 
-.body-text .news h1, .body-text .projects h1 {
+.body-text .news h1,
+.body-text .projects h1 {
 	text-align: center;
 	margin-bottom: 2rem;
 	color: #d00;
 }
 
-.body-text .news .news-content, .body-text .projects .project-content {
+.body-text .news .news-content,
+.body-text .projects .project-content {
 	box-sizing: border-box;
 	width: 100%;
 	padding-left: 2rem;
 	padding-right: 2rem;
 }
 
-.body-text .news .news-content:nth-child(2), .body-text .projects .project-content:nth-child(2) {
+.body-text .news .news-content:nth-child(2),
+.body-text .projects .project-content:nth-child(2) {
 	border-top: none;
 }
 
-.body-text .news .news-content:last-child, .body-text .projects .project-content:last-child {
+.body-text .news .news-content:last-child,
+.body-text .projects .project-content:last-child {
 	border-bottom: none;
 }
 
-.body-text .news .news-content:nth-child(even), .body-text .projects .project-content:nth-child(even) {
+.body-text .news .news-content:nth-child(even),
+.body-text .projects .project-content:nth-child(even) {
 	background-color: #ddd;
 }
 
@@ -371,7 +406,12 @@ hr.partial {
 		text-align: center;
 	}
 
-	h1.center-heading, h2.center-heading, h3.center-heading, h4.center-heading, h5.center-heading, h6.center-heading {
+	h1.center-heading,
+	h2.center-heading,
+	h3.center-heading,
+	h4.center-heading,
+	h5.center-heading,
+	h6.center-heading {
 		text-align: center;
 		margin-top: 1rem;
 		margin-bottom: 1rem;
