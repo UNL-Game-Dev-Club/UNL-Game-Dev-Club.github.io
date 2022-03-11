@@ -46,7 +46,7 @@ body {
 }
 
 .menubar {
-	background-color: #313131;
+	background-color: #333;
 	padding: 0 10%;
 	border-bottom: 4px solid #d00;
 	position: sticky;
@@ -336,7 +336,7 @@ hr.partial {
 	width: 100%;
 	border-top: 4px solid #d00;
 	text-align: center;
-	background-color: #313131;
+	background-color: #333;
 	color: #fff;
 	padding: 1.5rem 0;
 	font-size: 1.2rem;
