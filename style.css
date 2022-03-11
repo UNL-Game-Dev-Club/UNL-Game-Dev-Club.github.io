@@ -14,7 +14,7 @@ body {
 	height: 80%;
 }
 
-.header {
+header {
 	background-color: black;
 	padding: 1.5rem 10%;
 	font-family: "century gothic", arial, sans-serif;
@@ -22,52 +22,52 @@ body {
 	letter-spacing: 0.1rem;
 }
 
-.header h1 {
+header h1 {
 	color: #d00;
 	font-size: 3rem;
 }
 
-.header h1 a {
+header h1 a {
 	color: #777;
 	text-decoration: none;
 }
 
-.header h1 a span {
+header h1 a span {
 	color: #d00;
 }
 
-.header h1 a:hover {
+header h1 a:hover {
 	color: #d00;
 }
 
-.header h2 {
+header h2 {
 	color: #777;
 	font-size: 1.2rem;
 }
 
-.menubar {
+nav {
 	background-color: #333;
 	padding: 0 10%;
 	border-bottom: 4px solid #d00;
 	position: sticky;
 }
 
-.menubar ul li {
+nav ul li {
 	display: inline-block;
 	margin: 0 1%;
 	margin-top: 0.5rem;
 	padding: 0.3rem 2%;
 }
 
-.menubar ul li:first-child {
+nav ul li:first-child {
 	margin-left: 0;
 }
 
-.menubar ul li:last-child {
+nav ul li:last-child {
 	margin-right: 0;
 }
 
-.menubar ul li a {
+nav ul li a {
 	text-align: center;
 	color: #fff;
 	text-decoration: none;
@@ -75,15 +75,15 @@ body {
 	font-size: 1.3rem;
 }
 
-.menubar ul li a:hover {
+nav ul li a:hover {
 	color: #d00;
 }
 
-.menubar ul li.selected {
+nav ul li.selected {
 	background-color: #d00;
 }
 
-.menubar ul li.selected a:hover {
+nav ul li.selected a:hover {
 	color: #fff;
 }
 
@@ -145,7 +145,7 @@ body {
 	border-bottom: 2px solid #d00;
 }
 
-.body-text,
+main,
 .news,
 .project {
 	display: grid;
@@ -153,7 +153,7 @@ body {
 	position: relative;
 }
 
-.body-text-content,
+.main-content,
 .news-content,
 .project-content {
 	float: left;
@@ -161,7 +161,7 @@ body {
 	padding-top: 1rem;
 }
 
-.body-text-content h1,
+.main-content h1,
 .news-content h1,
 .project-content h1 {
 	font-size: 2rem;
@@ -170,7 +170,7 @@ body {
 	padding-bottom: 3rem;
 }
 
-.body-text-content h2,
+.main-content h2,
 .news-content h2,
 .project-content h2 {
 	font-size: 1.7rem;
@@ -178,47 +178,47 @@ body {
 	padding-bottom: 1rem;
 }
 
-.body-text-content h3,
+.main-content h3,
 .news-content h3,
 .project-content h3 {
 	color: #d00;
 	font-size: 1.3rem;
 }
 
-.body-text-content h3 .event-date,
+.main-content h3 .event-date,
 .news-content h3 .event-date,
 .project-content h3 .event-date {
 	font-style: italic;
 	font-size: 1.3rem;
 }
 
-.body-text-content hr,
+.main-content hr,
 .news-content hr,
 .project-content hr {
 	margin-bottom: 2rem;
 }
 
-.body-text-content p,
+.main-content p,
 .news-content p,
 .project-content p {
 	margin-bottom: 1.5rem;
 	font-size: 1.2rem;
 }
 
-.body-text-content ul,
+.main-content ul,
 .news-content ul,
 .project-content ul {
 	margin-left: 2rem;
 	margin-bottom: 1.5rem;
 }
 
-.body-text-content ul li,
+.main-content ul li,
 .news-content ul li,
 .project-content ul li {
 	font-size: 1.2rem;
 }
 
-.body-text-content,
+.main-content,
 .news-content,
 .project-content,
 .image {
@@ -227,7 +227,7 @@ body {
 	padding-right: 32px;
 }
 
-.body-text-content a,
+.main-content a,
 .news-content a,
 .project-content a {
 	color: black;
@@ -235,51 +235,51 @@ body {
 	border-bottom: 2px dotted #d00;
 }
 
-.body-text-content a:hover,
+.main-content a:hover,
 .news-content a:hover,
 .project-content a:hover {
 	color: #d00;
 	border-bottom: 2px solid #d00;
 }
 
-.body-text-content:nth-child(even),
+.main-content:nth-child(even),
 .news-content:nth-child(even),
 .project-content:nth-child(even) {
 	background-color: #ddd;
 }
 
-.body-text .news,
+main .news,
 .projects {
 	padding: 0 10%;
 }
 
-.body-text .news h1,
-.body-text .projects h1 {
+main .news h1,
+main .projects h1 {
 	text-align: center;
 	margin-bottom: 2rem;
 	color: #d00;
 }
 
-.body-text .news .news-content,
-.body-text .projects .project-content {
+main .news .news-content,
+main .projects .project-content {
 	box-sizing: border-box;
 	width: 100%;
 	padding-left: 2rem;
 	padding-right: 2rem;
 }
 
-.body-text .news .news-content:nth-child(2),
-.body-text .projects .project-content:nth-child(2) {
+main .news .news-content:nth-child(2),
+main .projects .project-content:nth-child(2) {
 	border-top: none;
 }
 
-.body-text .news .news-content:last-child,
-.body-text .projects .project-content:last-child {
+main .news .news-content:last-child,
+main .projects .project-content:last-child {
 	border-bottom: none;
 }
 
-.body-text .news .news-content:nth-child(even),
-.body-text .projects .project-content:nth-child(even) {
+main .news .news-content:nth-child(even),
+main .projects .project-content:nth-child(even) {
 	background-color: #ddd;
 }
 
@@ -331,7 +331,7 @@ hr.partial {
 	margin-bottom: 1.5rem;
 }
 
-.footer {
+footer {
 	margin-top: 2rem;
 	width: 100%;
 	border-top: 4px solid #d00;
@@ -342,29 +342,29 @@ hr.partial {
 	font-size: 1.2rem;
 }
 
-.footer ul li {
+footer ul li {
 	display: inline-block;
 	padding: 0 3rem;
 	border-right: 1px solid #fff;
 }
 
-.footer ul li:last-child {
+footer ul li:last-child {
 	border-right: none;
 }
 
-.footer ul li a {
+footer ul li a {
 	color: #fff;
 	text-decoration: none;
 	border-bottom: 2px dotted #d00;
 }
 
-.footer ul li a:hover {
+footer ul li a:hover {
 	color: #d00;
 	border-bottom: 2px solid #d00;
 }
 
 @media (max-width: 1112px) {
-	.menubar ul {
+	nav ul {
 		padding: 0;
 		margin: 0;
 		display: grid;
@@ -372,30 +372,8 @@ hr.partial {
 		text-align: center;
 	}
 
-	.menubar ul li {
+	nav ul li {
 		margin: 0;
-	}
-
-	.body-text-sidebar h1 {
-		font-size: 1.5rem;
-		text-align: center;
-		padding: 1.5rem;
-		padding-bottom: 3rem;
-	}
-
-	.body-text-sidebar h2 {
-		font-size: 1rem;
-		text-align: left;
-		padding-bottom: 0.5rem;
-	}
-
-	.body-text-sidebar p {
-		font-size: 0.8rem;
-		margin-bottom: 1rem;
-	}
-
-	.body-text-sidebar .event {
-		padding: 0.5rem;
 	}
 
 	.officer-roles {
@@ -419,7 +397,7 @@ hr.partial {
 }
 
 @media (max-width: 810px) {
-	.menubar ul {
+	nav ul {
 		padding: 0;
 		margin: 0;
 		display: grid;
@@ -427,97 +405,58 @@ hr.partial {
 		text-align: center;
 	}
 
-	.menubar ul li {
+	nav ul li {
 		margin: 0;
 	}
 
-	.body-text {
+	main {
 		grid-template-columns: 100%;
 		padding: 0;
 	}
 
-	.body-text-content {
+	.main-content {
 		padding: 5%;
-	}
-
-	.body-text-sidebar {
-		padding: 1.5rem;
-		float: right;
-		text-align: left;
-		background-color: #ddd;
-		height: 100%;
-	}
-
-	.body-text-sidebar h1 {
-		font-size: 2rem;
-	}
-
-	.body-text-sidebar h2 {
-		font-size: 1.5rem;
-		text-align: left;
-		padding-bottom: 1rem;
-	}
-
-	.body-text-sidebar p {
-		margin-bottom: 2rem;
-		font-size: 1.2rem;
 	}
 }
 
 @media (max-width: 620px) {
-	.header h1 {
+	header h1 {
 		font-size: 1.7rem;
 		text-align: center;
 	}
 
-	.header h2 {
+	header h2 {
 		font-size: 1rem;
 		text-align: center;
 	}
 
-	.menubar ul {
+	nav ul {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 		text-align: center;
 	}
 
-	.menubar ul li a {
+	nav ul li a {
 		font-size: 1rem;
 	}
 
-	.body-text h1 {
+	main h1 {
 		font-size: 1.5rem;
 	}
 
-	.body-text h2 {
+	main h2 {
 		font-size: 1.2rem;
 	}
 
-	.body-text h3 {
+	main h3 {
 		font-size: 1rem;
 	}
 
-	.body-text p {
+	main p {
 		font-size: 0.8rem;
 	}
 
-	.body-text ul li {
-		font-size: 0.8rem;
-	}
-
-	.body-text-sidebar {
-		text-align: left;
-	}
-
-	.body-text-sidebar h1 {
-		font-size: 1.5rem;
-	}
-
-	.body-text-sidebar h2 {
-		font-size: 1.2rem;
-	}
-
-	.body-text-sidebar p {
+	main ul li {
 		font-size: 0.8rem;
 	}
 
@@ -527,13 +466,13 @@ hr.partial {
 }
 
 @media (max-width: 500px) {
-	.footer ul {
+	footer ul {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-row-gap: 1rem;
 	}
 
-	.footer ul li {
+	footer ul li {
 		border-right: none;
 	}
 
@@ -542,14 +481,14 @@ hr.partial {
 		text-align: center;
 	}
 
-	.menubar ul {
+	nav ul {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 }
 
 @media (max-width: 320px) {
-	.footer ul li {
+	footer ul li {
 		border-right: none;
 		display: block;
 		font-size: 0.8rem;
