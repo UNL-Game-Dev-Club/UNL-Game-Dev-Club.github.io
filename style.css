@@ -10,34 +10,18 @@ html {
 }
 
 body {
-	font-family: "lucida sans", arial, sans-serif;
+	font-family: sans-serif;
 	height: 80%;
 }
 
 header {
 	background-color: black;
-	padding: 1.5rem 10%;
-	font-family: "century gothic", arial, sans-serif;
-	font-weight: 100;
-	letter-spacing: 0.1rem;
+	padding: 1em 10%;
 }
 
-header h1 {
-	color: #d00;
-	font-size: 3rem;
-}
-
-header h1 a {
-	color: #777;
-	text-decoration: none;
-}
-
-header h1 a span {
-	color: #d00;
-}
-
-header h1 a:hover {
-	color: #d00;
+header img {
+	image-rendering: crisp-edges;
+	height: 4em;
 }
 
 header h2 {
@@ -48,14 +32,12 @@ header h2 {
 nav {
 	background-color: #333;
 	padding: 0 10%;
-	border-bottom: 4px solid #d00;
 	position: sticky;
 }
 
 nav ul li {
 	display: inline-block;
 	margin: 0 1%;
-	margin-top: 0.5rem;
 	padding: 0.3rem 2%;
 }
 
@@ -71,20 +53,20 @@ nav ul li a {
 	text-align: center;
 	color: #fff;
 	text-decoration: none;
-	padding: 0.5rem;
+	padding: 0.5rem 0;
 	font-size: 1.3rem;
-}
-
-nav ul li a:hover {
-	color: #d00;
 }
 
 nav ul li.selected {
 	background-color: #d00;
 }
 
-nav ul li.selected a:hover {
-	color: #fff;
+nav ul li:hover {
+	background-color: #fff;
+}
+
+nav ul li:hover a {
+	color: #d00;
 }
 
 .header-content {
