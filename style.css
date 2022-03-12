@@ -21,7 +21,8 @@ header {
 
 header img {
 	image-rendering: crisp-edges;
-	height: 4em;
+	width: 40em;
+	max-width: 100%;
 }
 
 header h2 {
