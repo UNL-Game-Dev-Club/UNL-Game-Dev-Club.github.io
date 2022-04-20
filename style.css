@@ -15,7 +15,7 @@ body {
 }
 
 header {
-	background-color: black;
+	background-color: #000;
 	padding: 1em 10%;
 }
 
@@ -50,20 +50,20 @@ nav ul li:last-child {
 	margin-right: 0;
 }
 
-nav ul li a {
-	text-align: center;
-	color: #fff;
-	text-decoration: none;
-	padding: 0.5rem 0;
-	font-size: 1.3rem;
-}
-
 nav ul li.selected {
 	background-color: #d00;
 }
 
 nav ul li:hover {
 	background-color: #fff;
+}
+
+nav ul li a {
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	padding: 0.5rem 0;
+	font-size: 1.3rem;
 }
 
 nav ul li:hover a {
@@ -115,17 +115,6 @@ nav ul li:hover a {
 
 .header-content ul li {
 	font-size: 1.2rem;
-}
-
-.header-content a {
-	color: black;
-	text-decoration: none;
-	border-bottom: 2px dotted #d00;
-}
-
-.header-content a:hover {
-	color: #d00;
-	border-bottom: 2px solid #d00;
 }
 
 main,
@@ -201,24 +190,17 @@ main,
 	font-size: 1.2rem;
 }
 
-.main-content,
-.news-content,
-.project-content,
-.image {
-	float: left;
-	padding-bottom: 16px;
-	padding-right: 32px;
-}
-
+.header-content a,
 .main-content a,
 .news-content a,
 .project-content a {
-	color: black;
+	color: #000;
 	text-decoration: none;
 	border-bottom: 2px dotted #d00;
 }
 
-.main-content a:hover,
+.header-content a:hover,
+.main-content a,
 .news-content a:hover,
 .project-content a:hover {
 	color: #d00;
@@ -229,6 +211,15 @@ main,
 .news-content:nth-child(even),
 .project-content:nth-child(even) {
 	background-color: #ddd;
+}
+
+.main-content,
+.news-content,
+.project-content,
+.image {
+	float: left;
+	padding-bottom: 16px;
+	padding-right: 32px;
 }
 
 main .news,
@@ -475,5 +466,27 @@ footer ul li a:hover {
 		border-right: none;
 		display: block;
 		font-size: 0.8rem;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		color: #eee;
+		background: #181818;
+	}
+
+	.main-content:nth-child(even),
+	.news-content:nth-child(even),
+	.project-content:nth-child(even),
+	main .news .news-content:nth-child(even),
+	main .projects .project-content:nth-child(even) {
+		background-color: #333;
+	}
+
+	.header-content a,
+	.main-content a,
+	.news-content a,
+	.project-content a {
+		color: #eee;
 	}
 }
