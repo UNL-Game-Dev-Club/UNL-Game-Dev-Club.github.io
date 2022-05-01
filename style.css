@@ -200,7 +200,7 @@ main,
 }
 
 .header-content a:hover,
-.main-content a,
+.main-content a:hover,
 .news-content a:hover,
 .project-content a:hover {
 	color: #d00;
