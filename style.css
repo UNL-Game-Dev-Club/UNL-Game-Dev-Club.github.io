@@ -123,7 +123,7 @@ main a:hover {
 	margin-bottom: 1em;
 	margin-right: 2em;
 	width: 315px;
-	height: 250px;
+	max-width: 100%;
 }
 
 .project-content {
@@ -181,6 +181,11 @@ main a:hover {
 	.project-description,
 	.resource {
 		max-width: 100%;
+	}
+
+	.project img,
+	.project video {
+		margin-right: 0;
 	}
 }
 
