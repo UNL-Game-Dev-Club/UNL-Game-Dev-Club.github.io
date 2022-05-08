@@ -6,12 +6,10 @@
 html {
 	margin: 0;
 	padding: 0;
-	height: 100%;
 }
 
 body {
 	font-family: sans-serif;
-	height: 80%;
 }
 
 header {
@@ -72,7 +70,6 @@ main,
 .news,
 .project {
 	display: grid;
-	min-height: 96%;
 	position: relative;
 }
 
@@ -183,7 +180,6 @@ main .projects h1 {
 main .news .news-content,
 main .projects .project-content {
 	box-sizing: border-box;
-	width: 100%;
 	padding-left: 2rem;
 	padding-right: 2rem;
 }
@@ -230,7 +226,6 @@ hr.partial {
 }
 
 .officer-roles {
-	width: 100%;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 }
@@ -246,37 +241,6 @@ hr.partial {
 
 .officer-roles .role p:last-child {
 	margin-bottom: 1.5rem;
-}
-
-footer {
-	margin-top: 2rem;
-	width: 100%;
-	border-top: 4px solid #d00;
-	text-align: center;
-	background-color: #333;
-	color: #fff;
-	padding: 1.5rem 0;
-}
-
-footer ul li {
-	display: inline-block;
-	padding: 0 3rem;
-	border-right: 1px solid #fff;
-}
-
-footer ul li:last-child {
-	border-right: none;
-}
-
-footer ul li a {
-	color: #fff;
-	text-decoration: none;
-	border-bottom: 2px dotted #d00;
-}
-
-footer ul li a:hover {
-	color: #d00;
-	border-bottom: 2px solid #d00;
 }
 
 @media (prefers-color-scheme: dark) {
