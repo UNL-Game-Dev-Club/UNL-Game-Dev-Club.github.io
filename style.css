@@ -105,7 +105,7 @@ main a:hover {
 	padding: 1rem 2rem;
 }
 
-.news-content:nth-child(odd),
+.news-content:nth-child(even),
 .project:nth-child(even),
 .resource-section:nth-child(even) {
 	background-color: #ddd;
