@@ -82,11 +82,11 @@ main ul {
 }
 
 main a {
-	color: #000;
+	color: #d00;
 }
 
 main a:hover {
-	color: #d00;
+	color: #000;
 }
 
 .news h1,
@@ -203,7 +203,7 @@ main a:hover {
 		background-color: #333;
 	}
 
-	main a {
+	main a:hover {
 		color: #eee;
 	}
 }
