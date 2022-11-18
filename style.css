@@ -105,9 +105,9 @@ main a:hover {
 	padding: 1rem 2rem;
 }
 
-.news-content:nth-child(even),
-.project:nth-child(even),
-.resource-section:nth-child(even) {
+.news-content:nth-of-type(odd),
+.project:nth-of-type(odd),
+.resource-section:nth-of-type(odd) {
 	background-color: #ddd;
 }
 
@@ -195,11 +195,9 @@ main a:hover {
 		background: #181818;
 	}
 
-	.news-content:nth-child(even),
-	.project:nth-child(even),
-	main .news .news-content:nth-child(even),
-	main .projects .project:nth-child(even),
-	main .resource-section:nth-child(even) {
+	.news-content:nth-of-type(odd),
+	.project:nth-of-type(odd),
+	.resource-section:nth-of-type(odd) {
 		background-color: #333;
 	}
 
