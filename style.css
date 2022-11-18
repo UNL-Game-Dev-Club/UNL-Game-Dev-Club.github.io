@@ -6,6 +6,8 @@
 body {
 	font-family: sans-serif;
 	padding-bottom: 2rem;
+	color: #000;
+	background: #fff;
 }
 
 header {
