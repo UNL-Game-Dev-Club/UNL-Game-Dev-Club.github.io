@@ -128,7 +128,7 @@ main a:hover {
 	max-width: 100%;
 }
 
-.project-content {
+.project {
 	display: flex;
 	flex-flow: row wrap;
 }
