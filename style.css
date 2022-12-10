@@ -22,7 +22,7 @@ header img {
 }
 
 nav {
-	background-color: #333;
+	background-color: #222;
 	padding: 0 max(5%, 1rem);
 }
 
@@ -110,7 +110,7 @@ main a:hover {
 .news-content:nth-of-type(odd),
 .project:nth-of-type(odd),
 .resource-section:nth-of-type(odd) {
-	background-color: #ddd;
+	background-color: #ccc;
 }
 
 .news-content p:last-child,
@@ -125,16 +125,12 @@ main a:hover {
 	margin-bottom: 1em;
 	margin-right: 2em;
 	width: 315px;
-	max-width: 100%;
+	height: 100%;
 }
 
 .project {
 	display: flex;
-	flex-flow: row wrap;
-}
-
-.project-description {
-	max-width: calc(64rem - 315px - 6rem);
+	flex-flow: row;
 }
 
 .resource-section {
@@ -179,31 +175,42 @@ main a:hover {
 	margin-bottom: 0;
 }
 
-@media screen and not (min-width: 66rem) {
-	.project-description,
-	.resource {
-		max-width: 100%;
+@media screen and not (min-width: calc(64rem * 0.75)) {
+	.project {
+		display: block;
 	}
 
 	.project img,
 	.project video {
 		margin-right: 0;
 	}
+
+	.project-description {
+		max-width: 100%;
+	}
+}
+
+@media screen and not (min-width: calc(64rem * 1.1)) {
+	.resource {
+		max-width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
 	body {
-		color: #eee;
-		background: #181818;
+		color: #fff;
+		background: #000;
 	}
 
 	.news-content:nth-of-type(odd),
 	.project:nth-of-type(odd),
 	.resource-section:nth-of-type(odd) {
-		background-color: #333;
+		background-color: #222;
 	}
 
 	main a:hover {
-		color: #eee;
+		color: #fff;
 	}
 }
